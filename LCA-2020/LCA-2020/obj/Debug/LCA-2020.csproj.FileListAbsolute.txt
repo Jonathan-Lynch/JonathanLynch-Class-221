@@ -1,7 +1,0 @@
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\bin\Debug\LCA-2020.exe.config
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\bin\Debug\LCA-2020.exe
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\bin\Debug\LCA-2020.pdb
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\obj\Debug\LCA-2020.csprojAssemblyReference.cache
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\obj\Debug\LCA-2020.csproj.CoreCompileInputs.cache
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\obj\Debug\LCA-2020.exe
-C:\Users\jonat\Documents\LCA-2020\LCA-2020\obj\Debug\LCA-2020.pdb
