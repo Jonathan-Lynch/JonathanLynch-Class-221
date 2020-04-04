@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\bin\Debug\LCA-2020-Class-221.exe.config
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\bin\Debug\LCA-2020-Class-221.exe
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\bin\Debug\LCA-2020-Class-221.pdb
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\obj\Debug\ManyMethods.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\obj\Debug\ManyMethods.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\obj\Debug\LCA-2020-Class-221.exe
+C:\Users\jonat\Documents\LCA-2020-Class-221\LCA-2020-Class-221\obj\Debug\LCA-2020-Class-221.pdb

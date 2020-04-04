@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\bin\Debug\PigLatin2.0.exe.config
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\bin\Debug\PigLatin2.0.exe
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\bin\Debug\PigLatin2.0.pdb
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\obj\Debug\PigLatin2.0.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\obj\Debug\PigLatin2.0.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\obj\Debug\PigLatin2.0.exe
+C:\Users\jonat\Documents\LCA-2020-Class-221\PigLatin2.0\obj\Debug\PigLatin2.0.pdb
