@@ -23,20 +23,18 @@ namespace PigLatin2._0
 			int lastLetterVowel = lastLetter.IndexOfAny(vowels);
 			int firstVowel = answer.IndexOfAny(vowels);
 
-
-			string firstPartOfWord = "";
-			string secondPartOfWord = "";
+			string firstHalfOfWord = "";
+			string secondHalfOfWord = "";
 			string anyVowel ="";
 
-			if(firstVowel>-1) { 
-				firstPartOfWord = answer.Substring(0, firstVowel);
-				secondPartOfWord = answer.Substring(firstVowel);
+			if(firstVowel>-1) {
+				firstHalfOfWord = answer.Substring(0, firstVowel);
+				secondHalfOfWord = answer.Substring(firstVowel);
 				anyVowel = answer.Substring(1, firstVowel);
 			}
 
 			var doesFirstLetterHaveVowel = false;
 			var doesLastLetterHaveVowel = false;
-			var doesWordHaveVowel = false;
 
 			//if there if a vowel at the end and beginnning of a word add 'yay'
 			if ((0 == firstVowel) && (lastLetter.IndexOfAny(vowels)== 0))
@@ -59,7 +57,11 @@ namespace PigLatin2._0
 				Console.ReadLine();
 			}
 
-			if (0 == firstPartOfWord)
+			if (firstVowel>0)
+			{
+				Console.WriteLine(secondHalfOfWord + firstHalfOfWord + "ay");
+				Console.ReadLine();
+			}
 
 		}
 	}
