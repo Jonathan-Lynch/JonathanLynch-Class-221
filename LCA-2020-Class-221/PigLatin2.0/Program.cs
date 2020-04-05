@@ -33,8 +33,6 @@ namespace PigLatin2._0
 				anyVowel = answer.Substring(1, firstVowel);
 			}
 
-			var doesFirstLetterHaveVowel = false;
-			var doesLastLetterHaveVowel = false;
 
 			//if there if a vowel at the end and beginnning of a word add 'yay'
 			if ((0 == firstVowel) && (lastLetter.IndexOfAny(vowels)== 0))
@@ -57,6 +55,7 @@ namespace PigLatin2._0
 				Console.ReadLine();
 			}
 
+			//if starts with consonant and has vowel then will move the first few letters to the end and adds 'ay'
 			if (firstVowel>0)
 			{
 				Console.WriteLine(secondHalfOfWord + firstHalfOfWord + "ay");
