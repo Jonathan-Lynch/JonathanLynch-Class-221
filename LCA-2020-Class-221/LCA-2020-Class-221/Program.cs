@@ -42,9 +42,7 @@ namespace ManyMethods
 
 		//adds the 2 inputed numbers
 		static void addition()
-		{
-			
-			
+		{	
 			Console.WriteLine("Write Number one: ");
 			int num1 = Convert.ToInt32(Console.ReadLine());
 			Console.WriteLine("Write Number two: ");

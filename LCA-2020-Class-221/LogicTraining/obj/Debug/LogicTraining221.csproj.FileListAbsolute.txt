@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\bin\Debug\LogicTraining.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\bin\Debug\LogicTraining.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\bin\Debug\LogicTraining.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\obj\Debug\LogicTraining221.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\obj\Debug\LogicTraining221.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\obj\Debug\LogicTraining.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\LogicTraining\obj\Debug\LogicTraining.pdb
