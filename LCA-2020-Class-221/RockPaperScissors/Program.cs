@@ -98,7 +98,7 @@ namespace RockPaperScissors
 							}
 							break;
 					}
-					Console.WriteLine(playerName + " " + "Score: " + playerScore + " " + cpuName + " " + "Score: " + cpuScore);
+					Console.WriteLine(playerName + " " + "Score: " + playerScore + " | " + cpuName + " " + "Score: " + cpuScore);
 
 
 					if (playerScore == 3)
