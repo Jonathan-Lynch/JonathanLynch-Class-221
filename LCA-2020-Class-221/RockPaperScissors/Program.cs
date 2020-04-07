@@ -14,20 +14,31 @@ namespace RockPaperScissors
 
 			string inputPlayer, inputCpu;
 			int randomInt;
+			
 			bool playAgain = true;
 
 			while (playAgain)
 			{
 
-				
+				Console.WriteLine("What is your Name?");
+				string playerName = Console.ReadLine();
 
-				Console.WriteLine("Choose Rock, Paper or Scissors");
-				inputPlayer = Console.ReadLine().ToUpper();
+				string cpuName = "Evil " + playerName;
 
-				Random Random = new Random();
-				randomInt = Random.Next(1, 4);
+				int playerScore = 0;
+				int cpuScore = 0;
 
-				switch (randomInt)
+				while (playerScore < 3 && cpuScore < 3)
+				{
+					Console.WriteLine("Choose Rock, Paper or Scissors");
+					inputPlayer = Console.ReadLine().ToUpper();
+
+					Random Random = new Random();
+					randomInt = Random.Next(1, 4);
+
+
+
+					switch (randomInt)
 					{
 						//Rock
 						case 1:
@@ -40,10 +51,12 @@ namespace RockPaperScissors
 							else if (inputPlayer == "PAPER")
 							{
 								Console.WriteLine("Player Wins!");
+								playerScore++;
 							}
 							else if (inputPlayer == "SCISSORS")
 							{
 								Console.WriteLine("Computer Wins!");
+								cpuScore++;
 							}
 							break;
 						//Paper
@@ -53,6 +66,7 @@ namespace RockPaperScissors
 							if (inputPlayer == "ROCK")
 							{
 								Console.WriteLine("Computer Wins!");
+								cpuScore++;
 							}
 							if (inputPlayer == "PAPER")
 							{
@@ -61,6 +75,7 @@ namespace RockPaperScissors
 							if (inputPlayer == "SCISSORS")
 							{
 								Console.WriteLine("Player Wins!");
+								playerScore++;
 							}
 							break;
 						//Scissors
@@ -70,10 +85,12 @@ namespace RockPaperScissors
 							if (inputPlayer == "ROCK")
 							{
 								Console.WriteLine("Player Wins!");
+								playerScore++;
 							}
 							if (inputPlayer == "PAPER")
 							{
 								Console.WriteLine("Computer Wins");
+								cpuScore++;
 							}
 							if (inputPlayer == "SCISSORS")
 							{
@@ -81,8 +98,33 @@ namespace RockPaperScissors
 							}
 							break;
 					}
+					Console.WriteLine(playerName + " " + "Score: " + playerScore + " " + cpuName + " " + "Score: " + cpuScore);
+
+
+					if (playerScore == 3)
+					{
+						Console.WriteLine(playerName + " is the Grand Winner! good for you.");
+					}
+					else if (cpuScore == 3)
+					{
+						Console.WriteLine(cpuName + " is the Grand Winner! Wow, i guess " + cpuName + " is Smarter than you.");
+					}
 
 					
+				}
+
+				Console.WriteLine("Do you want to play again?(yes/no)");
+				string loopGame = Console.ReadLine().ToUpper();
+
+				if (loopGame == "YES")
+				{
+					playAgain = true;
+				}
+				if (loopGame == "NO")
+				{
+					playAgain = false;
+				}
+
 			}
 
 			/////
