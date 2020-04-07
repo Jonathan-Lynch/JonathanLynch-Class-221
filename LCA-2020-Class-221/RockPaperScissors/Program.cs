@@ -19,7 +19,7 @@ namespace RockPaperScissors
 
 			while (playAgain)
 			{
-
+				Console.WriteLine("First to 3 Wins!");
 				Console.WriteLine("What is your Name?");
 				string playerName = Console.ReadLine();
 
@@ -107,7 +107,7 @@ namespace RockPaperScissors
 					}
 					else if (cpuScore == 3)
 					{
-						Console.WriteLine(cpuName + " is the Grand Winner! Wow, i guess " + cpuName + " is Smarter than you.");
+						Console.WriteLine(cpuName + " is the Grand Winner! Wow, I guess " + cpuName + " is Smarter than you.");
 					}
 
 					
