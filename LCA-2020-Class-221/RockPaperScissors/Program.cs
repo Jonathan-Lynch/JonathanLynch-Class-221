@@ -19,7 +19,7 @@ namespace RockPaperScissors
 
 			while (playAgain)
 			{
-				Console.WriteLine("First to 3 Wins!");
+				Console.WriteLine("First to 3 points Wins!");
 				Console.WriteLine("What is your Name?");
 				string playerName = Console.ReadLine();
 
