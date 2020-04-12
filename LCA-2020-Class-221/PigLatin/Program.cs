@@ -55,7 +55,7 @@ namespace PigLatin2._0
 				Console.WriteLine(answer + "ay");
 				Console.ReadLine();
 			}
-
+			//if consonant is at beginning and vowel is in the word move all cons to end & add "ay"
 			if (firstVowel > 0)
 			{
 				Console.WriteLine(secondHalfOfWord + firstHalfOfWord + "ay");

@@ -10,17 +10,28 @@ namespace LoopsTraining
 	{
 		static void Main(string[] args)
 		{
+			tic();
 
-			forLoops();
+			//forLoops();
 
-			forEachLoop();
+			//forEachLoop();
 
-			whileLoop();
+			//whileLoop();
 
-			doWhileLoop();
+			//doWhileLoop();
 
-			arrayPractice();
+			//arrayPractice();
 
+		}
+
+		static void tic()
+		{
+			Console.WriteLine("   |  |  ");
+			Console.WriteLine("---+--+---");
+			Console.WriteLine("   |  |  ");
+			Console.WriteLine("---+--+---");
+			Console.WriteLine("   |  |  ");
+			Console.ReadLine();
 		}
 
 		static void forLoops()
@@ -140,7 +151,7 @@ namespace LoopsTraining
 			int[] primes = {1,2,3,5,7,11,13,17,19};
 
 			bool[] someFlags = { true, false, false, true, false, true };
-			char[] multipleChoiceAnswers = {'A', 'D', 'A', 'E', 'B '}
+			char[] multipleChoiceAnswers = { 'A', 'D', 'A', 'E', 'B' };
 		}
 
 		static void arrayExperiments()

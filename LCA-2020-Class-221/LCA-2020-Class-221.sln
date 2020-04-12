@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fun_Projects", "Fun_Project
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopsTraining", "LoopsTraining\LoopsTraining.csproj", "{5FECD847-7854-466A-A963-7E925C2FA4CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{2518C89B-B779-4594-8F03-8671516992AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5FECD847-7854-466A-A963-7E925C2FA4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FECD847-7854-466A-A963-7E925C2FA4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FECD847-7854-466A-A963-7E925C2FA4CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2518C89B-B779-4594-8F03-8671516992AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2518C89B-B779-4594-8F03-8671516992AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2518C89B-B779-4594-8F03-8671516992AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2518C89B-B779-4594-8F03-8671516992AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
