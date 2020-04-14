@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\bin\Debug\Collections.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\bin\Debug\Collections.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\bin\Debug\Collections.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\obj\Debug\Collections.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\obj\Debug\Collections.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\obj\Debug\Collections.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Collections\obj\Debug\Collections.pdb
