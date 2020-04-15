@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace PigLatin2._0
 {
+
+
+	/// <summary>
+	/// i am testing git
+	/// </summary>
 	class Program
 	{
 		static void Main(string[] args)
@@ -15,7 +20,7 @@ namespace PigLatin2._0
 
 			Console.WriteLine("Enter a Word");
 			string answer = Console.ReadLine();
-
+		
 			//Defining Terms
 
 			string lastLetter = answer.Substring(answer.Length - 1, 1);
