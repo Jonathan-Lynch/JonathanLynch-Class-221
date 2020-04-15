@@ -16,6 +16,9 @@ namespace Presentation
 		/// </summary>
 		static void Main(string[] args)
 		{
+
+			Console.WriteLine("Hello!");
+			Console.ReadLine();
 		}
 	}
 }
