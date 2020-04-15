@@ -11,8 +11,7 @@ namespace Presentation
 		/// <summary>
 		/// Git add (Specific Line)
 		/// Git Log
-		/// Git revert
-		/// Git Reset
+		/// Git Reset --hard COPYLINK
 		/// </summary>
 		static void Main(string[] args)
 		{
