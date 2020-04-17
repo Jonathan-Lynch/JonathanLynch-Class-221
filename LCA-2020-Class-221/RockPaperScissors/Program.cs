@@ -16,6 +16,7 @@ namespace RockPaperScissors
 			int randomInt;
 			
 			bool playAgain = true;
+			
 
 			while (playAgain)
 			{

@@ -34,6 +34,13 @@ namespace Collections
 			Console.WriteLine("Just Removed {0}", Remove);
 			Console.WriteLine("My stack now has {0} elements", colors.Count());
 			Console.ReadLine();
+
+
+			Console.WriteLine("Hello!");
+			Console.ReadLine();
+
+			Console.WriteLine("Hello!");
+			Console.ReadLine();
 			// Peek
 		}
 

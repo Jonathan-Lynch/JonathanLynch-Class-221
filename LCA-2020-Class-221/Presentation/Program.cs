@@ -24,21 +24,6 @@ namespace Presentation
 
 			Console.WriteLine("Hello!");
 			Console.ReadLine();
-
-			Console.WriteLine("Hello!");
-			Console.ReadLine();
-
-			Console.WriteLine("Hello!");
-			Console.ReadLine();
-
-			Console.WriteLine("Hello!");
-			Console.ReadLine();
-
-			Console.WriteLine("Hello!");
-			Console.ReadLine();
-
-			Console.WriteLine("Hello!");
-			Console.ReadLine();
 		}
 	}
 }
