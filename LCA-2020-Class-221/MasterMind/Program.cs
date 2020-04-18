@@ -16,19 +16,22 @@ namespace MasterMind
 			bool gameLoop = true;
 			bool invalidEntry = false;
 
+			//sets the game up and resets it when you finish
 			while (playAgain) {
 
 				Console.Clear();
 				string cpuColor = masterMindColCPU();
 				string cpuPos = masterMindPosCPU("POS");
 				
-
+				//loops the game were you keep guessing until you guess correctly
 				while (gameLoop) {
 
 					string colorPl = "";
 					string numberPl = "";
 
-					do {
+					//asks you to pick a color and tells if it is invalid or valid
+					do
+					{
 						Console.WriteLine("Pick a color between Red, Blue, and Yellow.");
 						colorPl = Console.ReadLine().ToUpper();
 						invalidEntry = false;
@@ -38,9 +41,13 @@ namespace MasterMind
 							Console.WriteLine("Invalid Entry, Try Again");
 							invalidEntry = true;
 						}
-
+					} while (invalidEntry);
+					
+					//asks you if to pick a position and tells if it is invalid or valid
+					do {
 						Console.WriteLine("Pick a Number between 1-3");
 						numberPl = Console.ReadLine().ToUpper();
+						invalidEntry = false;
 
 						if ((numberPl != "1") && (numberPl != "2") && (numberPl != "3"))
 						{
@@ -49,7 +56,7 @@ namespace MasterMind
 						}
 					} while (invalidEntry);
 					
-
+					//tells you how close you are from winning the game
 						if ((colorPl == cpuColor) && (numberPl == cpuPos))
 						{
 							Console.WriteLine("2-0");
@@ -70,6 +77,7 @@ namespace MasterMind
 					
 				}
 
+				//asks if you want to play again
 				Console.WriteLine("Do you want to play again?(yes/no)");
 				string loopGame = Console.ReadLine().ToUpper();
 
@@ -85,6 +93,7 @@ namespace MasterMind
 			}
 		}
 
+		//cpu chooses a color
 		static string masterMindColCPU()
 		{
 			string returnValue = "";
@@ -109,6 +118,8 @@ namespace MasterMind
 			
 			return returnValue;
 		}
+
+		//cpu chooses a number
 		static string masterMindPosCPU(string returnType)
 		{
 			int randomPos;
