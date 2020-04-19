@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\bin\Debug\GradeBook.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\bin\Debug\GradeBook.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\bin\Debug\GradeBook.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\obj\Debug\GradeBook.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\obj\Debug\GradeBook.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\obj\Debug\GradeBook.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\GradeBook\obj\Debug\GradeBook.pdb
