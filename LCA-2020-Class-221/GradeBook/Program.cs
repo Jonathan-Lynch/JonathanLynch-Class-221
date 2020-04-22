@@ -46,10 +46,11 @@ namespace GradeBook
 					lowestGrade = singleGrades.Min();
 					average = singleGrades.Average();
 
-					Console.WriteLine($"{item.Key}\n");
+					Console.WriteLine($"{item.Key}");
 					Console.WriteLine($"Highest Grades = {highestGrade}");
 					Console.WriteLine($"Lowest Grades = {lowestGrade}");
 					Console.WriteLine($"Average Grades = {average}");
+					Console.WriteLine("Press Enter to close program");
 				}
 					catch
 					{
