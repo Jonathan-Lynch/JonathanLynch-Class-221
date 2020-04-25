@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\bin\Debug\Tower_Of_Hanoi.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\bin\Debug\Tower_Of_Hanoi.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\bin\Debug\Tower_Of_Hanoi.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\obj\Debug\Tower_Of_Hanoi.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\obj\Debug\Tower_Of_Hanoi.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\obj\Debug\Tower_Of_Hanoi.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Tower_Of_Hanoi\obj\Debug\Tower_Of_Hanoi.pdb

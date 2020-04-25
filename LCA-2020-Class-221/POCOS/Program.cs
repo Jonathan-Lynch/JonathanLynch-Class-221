@@ -12,7 +12,7 @@ namespace POCOS
 		{
 			//License();
 			Publishing();
-			//AirPort();
+			AirPort();
 		}
 
 		static void License()
@@ -45,12 +45,13 @@ namespace POCOS
 			} while (!checkNum);
 
 			//prints out the results
-			Console.WriteLine("Your Driver License info is | first Name: " + person.firstName + " | Last Name: " + person.lastName + " | Gender: " + person.gender + " | License Number: " + person.licenseNumber + " |");
+			Console.WriteLine("Your Driver License info is | first Name: " + person.firstName + " | Last Name: " + person.lastName + " | Gender: " + person.gender + " | License Number: " + person.licenseNumber + " |" + " Press enter to continue");
 			Console.ReadLine();
 		}
 
 		static void Publishing()
 		{
+			Console.Clear();
 			//creates a book
 			Book product = new Book();
 			bool checkNum = true;
@@ -59,11 +60,20 @@ namespace POCOS
 			Console.WriteLine("What is the Title of your book?");
 			product.title = Console.ReadLine();
 
-			//asks for a author
-			Console.WriteLine("Who is the Author?");
-			product.authors = Console.ReadLine();
-			Console.WriteLine("is there another author? y/n");
-			Console.ReadLine().ToLower();				
+
+			var Authors = new List<string>();
+			string another;
+
+			do
+			{
+				//asks for a author
+				Console.WriteLine("Who is the Author?");
+				product.authors = Console.ReadLine();
+				Authors.Add(product.authors);
+				//checks if you want to add another name
+				Console.WriteLine("is there another author? y/n");
+				another = Console.ReadLine().ToLower();
+			} while (another.ToLower() == "y");
 
 			//asks for the number of pages and loops if it isnt a number
 			do
@@ -92,23 +102,44 @@ namespace POCOS
 			} while (!checkNum);
 
 			//prints out the result
-			Console.WriteLine("The Title is '" + product.title + "' and the Author: " + " and the number of the pages is " + product.pages + " and the SKU: " + product.SKU + " and the Price: " + product.price);
+			Console.WriteLine("The Title is '" + product.title + "' and the Author: " + Authors + " and the number of the pages is " + product.pages + " and the SKU: " + product.SKU + " and the Price: " + product.price + " Press enter to continue");
 			Console.ReadLine();
 		}
 
 		static void AirPort()
 		{
+			Console.Clear();
 			AirPlane plane = new AirPlane();
+			bool checkNum = true;
+			int result;
+
 			Console.WriteLine("Who Manufactured your plane?");
 			plane.manufacturer = Console.ReadLine();
+
 			Console.WriteLine("What is the Model?");
 			plane.model = Console.ReadLine();
+
 			Console.WriteLine("What is the Varient?");
 			plane.varient = Console.ReadLine();
-			Console.WriteLine("What is the Capacity of the Aircraft?");
-			plane.capacity = Convert.ToInt32(Console.ReadLine());
-			Console.WriteLine("What is the number of Engines in your Aircraft?");
-			plane.engines = Convert.ToInt32(Console.ReadLine());
+
+			do
+			{
+				Console.WriteLine("What is the Capacity of the Aircraft?");
+				plane.capacity = Console.ReadLine();
+
+				checkNum = int.TryParse(plane.capacity, out result);
+			} while (!checkNum);
+
+			do
+			{
+				Console.WriteLine("What is the number of Engines in your Aircraft?");
+				plane.engines = Console.ReadLine();
+
+				checkNum = int.TryParse(plane.engines, out result);
+			} while (!checkNum);
+
+			Console.WriteLine("munfacturer: " + plane.manufacturer + " | model: " + plane.model + " | vairent: " + plane.varient + " | capacity: " + plane.capacity + " | engines: " + plane.engines + " Press enter to continue");
+			Console.ReadLine();
 		}
 	}
 
@@ -134,8 +165,8 @@ namespace POCOS
 		public string manufacturer;
 		public string model;
 		public string varient;
-		public int capacity;
-		public int engines;
+		public string capacity;
+		public string engines;
 	}
 
 }

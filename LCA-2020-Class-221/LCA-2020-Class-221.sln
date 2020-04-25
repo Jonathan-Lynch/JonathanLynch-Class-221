@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList", "TodoList\TodoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassPractice", "ClassPractice\ClassPractice.csproj", "{02E59090-3A9D-41D1-A0D0-757C1053082F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tower_Of_Hanoi", "Tower_Of_Hanoi\Tower_Of_Hanoi.csproj", "{2100954F-9A7C-4EEA-A155-F0E3B56CF405}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{02E59090-3A9D-41D1-A0D0-757C1053082F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02E59090-3A9D-41D1-A0D0-757C1053082F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02E59090-3A9D-41D1-A0D0-757C1053082F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2100954F-9A7C-4EEA-A155-F0E3B56CF405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2100954F-9A7C-4EEA-A155-F0E3B56CF405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2100954F-9A7C-4EEA-A155-F0E3B56CF405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2100954F-9A7C-4EEA-A155-F0E3B56CF405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
