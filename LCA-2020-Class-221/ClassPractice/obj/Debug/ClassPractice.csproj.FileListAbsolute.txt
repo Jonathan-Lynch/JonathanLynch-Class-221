@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\bin\Debug\ClassPractice.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\bin\Debug\ClassPractice.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\bin\Debug\ClassPractice.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\obj\Debug\ClassPractice.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\obj\Debug\ClassPractice.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\obj\Debug\ClassPractice.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\ClassPractice\obj\Debug\ClassPractice.pdb

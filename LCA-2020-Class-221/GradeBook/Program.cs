@@ -51,7 +51,7 @@ namespace GradeBook
 					Console.WriteLine($"Lowest Grades = {lowestGrade}");
 					Console.WriteLine($"Average Grades = {average}");
 					Console.WriteLine("Press Enter to close program");
-				}
+					}
 					catch
 					{
 					
