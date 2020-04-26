@@ -14,14 +14,15 @@ namespace TodoList
 
 			bool finished = true;
 
-
+			//loops the program until finished
 			do
 			{
+				//asks if you want to add to the list or not
 					Console.WriteLine("Do you want to add a item to your To-Do-List?y/n");
 					string answer = Console.ReadLine();
 				
 				
-
+				//checks answer and responds according to what you type
 				if (answer == "y")
 				{
 					ToDoItem Task = new ToDoItem();
@@ -51,6 +52,7 @@ namespace TodoList
 
 			} while (!finished);
 			
+			//prints the list when done
 			foreach (var item in ToDoList)
 			{
 				Console.WriteLine(item.description + " " + item.dueDate + " " + item.priority);
@@ -66,12 +68,5 @@ namespace TodoList
 		public string dueDate;
 		public string priority;
 
-		/*
-		public ToDoItem(string initialDescription, string initialDueDate, string initialPriority)
-		{
-			description = initialDescription;
-			dueDate = initialDueDate;
-			priority = initialPriority;
-		} */
 	}
 }

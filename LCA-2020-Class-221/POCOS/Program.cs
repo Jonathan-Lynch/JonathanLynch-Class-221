@@ -10,7 +10,7 @@ namespace POCOS
 	{
 		static void Main(string[] args)
 		{
-			//License();
+			License();
 			Publishing();
 			AirPort();
 		}
@@ -107,15 +107,19 @@ namespace POCOS
 			bool checkNum = true;
 			int result;
 
+			//ask for a manufacturer
 			Console.WriteLine("Who Manufactured your plane?");
 			plane.manufacturer = Console.ReadLine();
 
+			//ask for a model
 			Console.WriteLine("What is the Model?");
 			plane.model = Console.ReadLine();
 
+			//ask for a varient
 			Console.WriteLine("What is the Varient?");
 			plane.varient = Console.ReadLine();
 
+			//asks for a capacity and loops if you dont type in a number
 			do
 			{
 				Console.WriteLine("What is the Capacity of the Aircraft?");
@@ -124,6 +128,7 @@ namespace POCOS
 				checkNum = int.TryParse(plane.capacity, out result);
 			} while (!checkNum);
 
+			//asks for an engine and loops if you dont type in a number
 			do
 			{
 				Console.WriteLine("What is the number of Engines in your Aircraft?");
@@ -132,6 +137,7 @@ namespace POCOS
 				checkNum = int.TryParse(plane.engines, out result);
 			} while (!checkNum);
 
+			//prints out the results
 			Console.WriteLine("munfacturer: " + plane.manufacturer + " | model: " + plane.model + " | vairent: " + plane.varient + " | capacity: " + plane.capacity + " | engines: " + plane.engines + " Press enter to continue");
 			Console.ReadLine();
 		}
