@@ -28,6 +28,11 @@ namespace Collections
 				Console.WriteLine(color);
 				//Console.ReadLine();
 			}
+			foreach (String color in colors)
+			{
+				Console.WriteLine(color);
+				//Console.ReadLine();
+			}
 			Console.ReadLine();
 
 			String Remove = colors.Pop();
