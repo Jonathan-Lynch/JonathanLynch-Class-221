@@ -64,16 +64,9 @@ namespace POCOS
 			var Authors = new List<string>();
 			string another;
 
-			do
-			{
 				//asks for a author
 				Console.WriteLine("Who is the Author?");
 				product.authors = Console.ReadLine();
-				Authors.Add(product.authors);
-				//checks if you want to add another name
-				Console.WriteLine("is there another author? y/n");
-				another = Console.ReadLine().ToLower();
-			} while (another.ToLower() == "y");
 
 			//asks for the number of pages and loops if it isnt a number
 			do
@@ -102,8 +95,9 @@ namespace POCOS
 			} while (!checkNum);
 
 			//prints out the result
-			Console.WriteLine("The Title is '" + product.title + "' and the Author: " + Authors + " and the number of the pages is " + product.pages + " and the SKU: " + product.SKU + " and the Price: " + product.price + " Press enter to continue");
+			Console.WriteLine("The Title is '" + product.title + "' and the Author: " + product.authors + " and the number of the pages is " + product.pages + " and the SKU: " + product.SKU + " and the Price: " + product.price + " Press enter to continue");
 			Console.ReadLine();
+
 		}
 
 		static void AirPort()
