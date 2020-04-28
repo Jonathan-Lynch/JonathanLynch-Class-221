@@ -11,10 +11,7 @@ namespace Tower_Of_Hanoi
 		const string winning_combo = "1234";
 		static void Main(string[] args)
 		{
-
-			//while (true)
-			//{
-
+			//sets the towers and 4 disks up
 			Dictionary<string, Stack<int>> towers = new Dictionary<string, Stack<int>>();
 			Stack<int> Disks = new Stack<int>();
 
@@ -29,16 +26,13 @@ namespace Tower_Of_Hanoi
 			towers.Add("B", new Stack<int>());
 			towers.Add("C", new Stack<int>());
 
+			var input = "";
+			var inputTo = "";
+
+			//loops the game until the game is won
 			do
 			{
-
-				var firstTower = towers["A"];
-				var secondTower = towers["B"];
-				var thirdTower = towers["C"];
-
-				//int poppedItem = firstTower.Pop();
-				//secondTower.Push(poppedItem);
-
+				//prints the board
 				Console.Clear();
 				foreach (var tow in towers)
 				{
@@ -57,16 +51,18 @@ namespace Tower_Of_Hanoi
 
 				bool invalid = true;
 
+				//loops til valid move
 				do
 				{
-
+					//asks you to pick a tower
 					Console.WriteLine("Type in A, B, or C to target and move a disc");
-					var input = Console.ReadLine().ToUpper().ToUpper();
+					input = Console.ReadLine().ToUpper().ToUpper();
 					
-
+					//asks you where you want to put it
 					Console.WriteLine("Type in where you want it to go");
-					var inputTo = Console.ReadLine().ToUpper();
+					inputTo = Console.ReadLine().ToUpper();
 
+					//wont put larger numbers and smaller numbers and then pops and push the number to the inputed place
 					int topToValue = 10;
 					int topFromValue = 10;
 
@@ -81,6 +77,7 @@ namespace Tower_Of_Hanoi
 						topFromValue = towers[input].Pop();
 						towers[input].Push(topFromValue);
 					}
+
 					Console.WriteLine("TOP TO: " + topToValue.ToString());
 					Console.WriteLine("TOP FROM: " + topFromValue.ToString());
 
@@ -89,35 +86,15 @@ namespace Tower_Of_Hanoi
 					else
 						Console.WriteLine("Can't move there.");
 
-					Console.ReadLine();
-
-
 				} while (!invalid);
 
+			} while (!CheckWon(towers[inputTo]));
 
-			} while (true);
-
-
-			//Disks.Push(7);
-			//var valueInStack = Disks.Pop();
-			//Console.WriteLine(valueInStack.ToString());
-			//Disks.Pop();
-			//}
-
-
-			/*
-			Console.WriteLine("Type in A, B, or C to target and move a disc");
-			string input = .ReadLine().ToUpper();
-
-			if ((input == "A") && (input == "B"))
-			{
-				Disks.Pop();
-			}
-
-			Console.ReadLine(); */
+			Console.WriteLine("You Win! Press Enter to close");
+			Console.ReadLine();
 		}
 
-		public bool CheckWon(Stack<int> stackInt)
+		public static bool CheckWon(Stack<int> stackInt)
 		{
 			string StackValue = "";
 
@@ -126,18 +103,16 @@ namespace Tower_Of_Hanoi
 				StackValue += num.ToString();
 			}
 
-			return (StackValue == winning_combo); 
+			return (StackValue == winning_combo);
 		}
 
+		//reverse the disks so they are in proper arrangment
 		public static string Reverse(string s)
 		{
 			char[] charArray = s.ToCharArray();
 			Array.Reverse(charArray);
 			return new string(charArray);
 		}
-
 	}
-
-
 }
 
