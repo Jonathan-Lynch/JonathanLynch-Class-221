@@ -1,0 +1,7 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\bin\Debug\SuperHeroes_Villians.exe.config
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\bin\Debug\SuperHeroes_Villians.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\bin\Debug\SuperHeroes_Villians.pdb
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\obj\Debug\SuperHeroes_Villians.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\obj\Debug\SuperHeroes_Villians.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\obj\Debug\SuperHeroes_Villians.exe
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\SuperHeroes_Villians\obj\Debug\SuperHeroes_Villians.pdb
