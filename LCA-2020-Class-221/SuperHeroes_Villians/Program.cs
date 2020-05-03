@@ -6,21 +6,17 @@ using System.Threading.Tasks;
 
 namespace SuperHeroes_Villians
 {
-
-	/// <summary>
-	/// Three class named 'Person, SuperHeroes, and Villian'
-	/// Person should have a constructor that accepts a name and a nickname
-	/// SuperHero should ask for real name, superName and superPower. prints out a greeting at the end
-	/// Super villian asks for a name and nemisis. 
-	/// </summary>
 	class Program
 	{
 		static void Main(string[] args)
 		{
-			//Citizen();
+			//Prints out a Citizen, Hero, & Villian
+			Citizen();
 			Hero();
+			badGuy();
 		}
 
+		//Asks you for information about a person prints it out
 		static void Citizen()
 		{
 			Console.WriteLine("What is your Name?");
@@ -34,6 +30,7 @@ namespace SuperHeroes_Villians
 			Console.ReadLine();
 		}
 
+		//Asks you for information about a Hero prints it out
 		static void Hero()
 		{
 			Console.WriteLine("What is your Real Name?");
@@ -49,6 +46,7 @@ namespace SuperHeroes_Villians
 			Console.ReadLine();
 		}
 
+		//Asks you for information about a Villian & prints it out
 		static void badGuy()
 		{
 			Console.WriteLine("What is your Villian Name?");
@@ -63,6 +61,7 @@ namespace SuperHeroes_Villians
 		}
 	}
 
+	//Classes about person, Hero, and Villian. 
 	public class Person
 	{
 		public string realName;
