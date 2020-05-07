@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarLot", "CarLot\CarLot.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{0DC1DBD2-4044-4616-B3D2-78F9F08F2415}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory", "Inventory\Inventory.csproj", "{93FB616A-7B95-4EAD-90BF-5C091E89EBDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkers", "Checkers\Checkers.csproj", "{91464B8F-AC71-48DA-ABE0-33B053964B51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{0DC1DBD2-4044-4616-B3D2-78F9F08F2415}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DC1DBD2-4044-4616-B3D2-78F9F08F2415}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC1DBD2-4044-4616-B3D2-78F9F08F2415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FB616A-7B95-4EAD-90BF-5C091E89EBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FB616A-7B95-4EAD-90BF-5C091E89EBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FB616A-7B95-4EAD-90BF-5C091E89EBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FB616A-7B95-4EAD-90BF-5C091E89EBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91464B8F-AC71-48DA-ABE0-33B053964B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91464B8F-AC71-48DA-ABE0-33B053964B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91464B8F-AC71-48DA-ABE0-33B053964B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91464B8F-AC71-48DA-ABE0-33B053964B51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

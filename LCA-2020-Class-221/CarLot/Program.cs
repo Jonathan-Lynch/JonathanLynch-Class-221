@@ -17,7 +17,7 @@ namespace CarLot
 			newCarLot.AddVehicle(new Car("53", "Volkswagon", "Herbie!", 53000, "Beetle", "2"));
 
 			//loops through the list of vehicles made & actually prints the information
-			foreach(var item in newCarLot.GetVehicles())
+			foreach(var item in newCarLot.StoreVehicles())
 			{
 				item.PrintInformation();
 			}
@@ -43,7 +43,7 @@ namespace CarLot
 			AutoMobiles.Add(AutoMobile);
 		}
 
-		public List<Vehicle> GetVehicles()
+		public List<Vehicle> StoreVehicles()
 		{
 			return AutoMobiles;
 		}

@@ -1,0 +1,2 @@
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Checkers\obj\Debug\Checkers.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\CSharp\JonathanLynch-Class-221\LCA-2020-Class-221\Checkers\obj\Debug\Checkers.csproj.CoreCompileInputs.cache
