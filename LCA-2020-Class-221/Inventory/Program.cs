@@ -12,6 +12,7 @@ namespace Inventory
 	{
 		static void Main(string[] args)
 		{
+			//creates a list of rentals(Boat, Car, Houses) and cycles through them
 			List<IRentable> rentals = new List<IRentable>();
 			rentals.Add(new Boat("HouseBoat", "Floats on Water", 12));
 			rentals.Add(new Car("Herbie", "He is very competitive", 53));
@@ -25,12 +26,14 @@ namespace Inventory
 		}
 	}
 
+	//list the methods used throughout the doc
 	public interface IRentable
 	{
 		decimal getRate();
 		string getDescription();
 	}
 
+	//hold details, type, and price about a boat
 	class Boat : IRentable
 	{
 		string type;
@@ -58,6 +61,7 @@ namespace Inventory
 		}
 	}
 
+	//hold details, type and price about a Car
 	class Car : IRentable
 	{
 		string type;
@@ -85,6 +89,7 @@ namespace Inventory
 		}
 	}
 
+	//hold details, type and price about a House
 	class House : IRentable
 	{
 		string type;
