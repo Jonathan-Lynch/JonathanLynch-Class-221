@@ -40,34 +40,34 @@ namespace Checkers
 
             if (src.row < 0 || src.row > 7 || src.col < 0 || src.col > 7 || dest.row < 0 || dest.row > 7 || dest.col < 0 || dest.col > 7)
             {
-                return false;   //Checks to see if the moves entered were on available on the board
+                return false;   
             }
 
-            //Checks to ensure the player moved more than 0 squares or less than 2 squares
+            
             int rowDistance = Math.Abs(dest.row - src.row);
             int colDistance = Math.Abs(dest.col - src.col);
 
-            if (colDistance == 0 || rowDistance == 0)  //checks to make sure that the checker is not moving in a straight line
+            if (colDistance == 0 || rowDistance == 0)  
             {
                 return false;
             }
-            if (rowDistance / colDistance != 1)        //checks that the move is diagonal
-            {
-                return false;
-            }
-
-            if (rowDistance > 2)        //Player selected a square beyond it movement square choices
+            if (rowDistance / colDistance != 1)        
             {
                 return false;
             }
 
-            if (colDistance > 2)        //Player selected a square beyond it movement square choices
+            if (rowDistance > 2)        
+            {
+                return false;
+            }
+
+            if (colDistance > 2)       
             {
                 return false;
             }
             Checker c = board.GetChecker(src);
 
-            if (c == null)      //There is no checker at the src selection
+            if (c == null)     
             {
                 return false;
             }
@@ -81,12 +81,12 @@ namespace Checkers
             c = board.GetChecker(dest);
 
 
-            if (c != null)     //Make sure there is no checker at the dest selection
+            if (c != null)    
             {
                 return false;
             }
 
-            if (rowDistance == 2)       //checks that if they player did move 2 was it because of a capture
+            if (rowDistance == 2)     
             {
                 if (IsCapture(src, dest))
                 {
@@ -109,8 +109,8 @@ namespace Checkers
             int rowDistance = Math.Abs(dest.row - src.row);
             int colDistance = Math.Abs(dest.col - src.row);
 
-            if (rowDistance == 2 && colDistance == 2)   //checks to see if there is a checker in the square that was jumped
-            {
+            if (rowDistance == 2 && colDistance == 2)
+            { 
                 int rowMid = (dest.row + src.row) / 2;
                 int colMid = (dest.col + src.col) / 2;
 
@@ -126,7 +126,7 @@ namespace Checkers
                 }
                 else
                 {
-                    if (c.Team == player.Team)      //checks to seee if the checker that was jumped is the same as the player that jumped it
+                    if (c.Team == player.Team)    
                     {
                         return false;
                     }
