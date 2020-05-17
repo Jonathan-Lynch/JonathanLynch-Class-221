@@ -38,30 +38,55 @@ namespace Checkers
         public bool IsLegalMove(Color player, Position src, Position dest)
         {
 
-            if (src.row < 0 || src.row > 7 || src.col < 0 || src.col > 7
-                || dest.row < 0 || dest.row > 7 || dest.col < 0 || dest.col > 7) return false;
+            if (src.row < 0 || src.row > 7 || src.col < 0 || src.col > 7 || dest.row < 0 || dest.row > 7 || dest.col < 0 || dest.col > 7)
+            {
+                return false;   //Checks to see if the moves entered were on available on the board
+            }
 
+            //Checks to ensure the player moved more than 0 squares or less than 2 squares
             int rowDistance = Math.Abs(dest.row - src.row);
             int colDistance = Math.Abs(dest.col - src.col);
 
-            if (colDistance == 0 || rowDistance == 0) return false;
-
-            if (rowDistance == 0 || colDistance != 1) return false;
-
-            if (rowDistance > 2) return false;
-
-            Checker c = board.GetChecker(src);
-            if (c != null)
+            if (colDistance == 0 || rowDistance == 0)  //checks to make sure that the checker is not moving in a straight line
             {
                 return false;
             }
+            if (rowDistance / colDistance != 1)        //checks that the move is diagonal
+            {
+                return false;
+            }
+
+            if (rowDistance > 2)        //Player selected a square beyond it movement square choices
+            {
+                return false;
+            }
+
+            if (colDistance > 2)        //Player selected a square beyond it movement square choices
+            {
+                return false;
+            }
+            Checker c = board.GetChecker(src);
+
+            if (c == null)      //There is no checker at the src selection
+            {
+                return false;
+            }
+
+            if (Program.playerTurn != c.Team)
+            {
+                return false;
+            }
+
+
             c = board.GetChecker(dest);
 
-            if (c != null)
+
+            if (c != null)     //Make sure there is no checker at the dest selection
             {
                 return false;
             }
-            if (rowDistance == 2)
+
+            if (rowDistance == 2)       //checks that if they player did move 2 was it because of a capture
             {
                 if (IsCapture(src, dest))
                 {
@@ -84,7 +109,7 @@ namespace Checkers
             int rowDistance = Math.Abs(dest.row - src.row);
             int colDistance = Math.Abs(dest.col - src.row);
 
-            if (rowDistance == 2 && colDistance == 2)   
+            if (rowDistance == 2 && colDistance == 2)   //checks to see if there is a checker in the square that was jumped
             {
                 int rowMid = (dest.row + src.row) / 2;
                 int colMid = (dest.col + src.col) / 2;
@@ -101,7 +126,7 @@ namespace Checkers
                 }
                 else
                 {
-                    if (c.Team == player.Team)      
+                    if (c.Team == player.Team)      //checks to seee if the checker that was jumped is the same as the player that jumped it
                     {
                         return false;
                     }
@@ -132,43 +157,94 @@ namespace Checkers
 
         public void ProcessInput()
         {
-            Console.WriteLine("Select a checker to move (Row, Column):");
-            String[] src = Console.ReadLine().Split(',');
-            Console.WriteLine("Select a square to move to (Row, Column):");
-            string[] dest = Console.ReadLine().Split(',');
+            bool isValid1 = false;
+            bool isValid2 = false;
+            Position from = new Position(0, 0);
+            Position to = new Position(0, 0);
 
-            Position from = new Position(int.Parse(src[0]), int.Parse(src[1]));
-            Position to = new Position(int.Parse(dest[0]), int.Parse(dest[1]));
-
-            Checker PlayerChecker = board.GetChecker(from);
-
-            if (PlayerChecker == null)
+            do
             {
-                Console.WriteLine("There is no checker there.");
+                Console.WriteLine("Select a row and column. (row,col)");
+                string[] src = Console.ReadLine().Split(',');
+                int srcCount = src.Count();
 
-            }
-            else
-            {
-                if (this.IsLegalMove(PlayerChecker.Team, from, to))
+
+                if (srcCount == 2)
                 {
-                    if (this.IsCapture(from, to))
+                    try
                     {
-                        Checker captureChecker = this.GetCaptureChecker(from, to);
-                        board.RemoveChecker(captureChecker);
+                        from = new Position(int.Parse(src[0]), int.Parse(src[1]));
+                        isValid1 = true;
                     }
-
-                    board.MoveChecker(PlayerChecker, to);
+                    catch
+                    {
+                        throw new ApplicationException("Please enter 2 numbers seperated by a comma:");
+                    }
                 }
                 else
                 {
+                    Console.WriteLine("Please enter 2 numbers seperated by a comma");
+                }
 
-                    Console.WriteLine("Move is Invalid");
+                Console.WriteLine("Select a row and column to move the checker to. (row,col)");
+                string[] dest = Console.ReadLine().Split(',');
+                int destCount = dest.Count();
+
+                if (destCount == 2)
+                {
+                    try
+                    {
+                        to = new Position(int.Parse(dest[0]), int.Parse(dest[1]));
+                        isValid2 = true;
+                    }
+                    catch
+                    {
+                        throw new ApplicationException("Please enter 2 numbers seperated by a comma");
+
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("Please enter 2 numbers seperated by a comma");
+                }
+
+            } while (!isValid1 && !isValid2);
+
+            Checker srcChecker = board.GetChecker(from);
+
+            if (srcChecker == null)
+            {
+                Console.WriteLine("Invalid Choice.");
+            }
+            else
+            {
+                if (IsLegalMove(srcChecker.Team, from, to))
+                {
+                    if (IsCapture(from, to))
+                    {
+                        Checker JumpChecker = GetCaptureChecker(from, to);
+                        board.RemoveChecker(JumpChecker);
+                        board.MoveChecker(srcChecker, to);
+                    }
+                    else
+                    {
+                        board.MoveChecker(srcChecker, to);
+                    }
                 }
             }
-            
+            Console.Clear();
+            DrawBoard();
+            if (Program.playerTurn == Color.White)
+            {
+                Program.playerTurn = Color.Black;
+            }
+            else
+            {
+                Program.playerTurn = Color.White;
+            }
         }
 
-        //I dont know why it wont print out the B/W symbols
         public void DrawBoard()
         {
             String[][] grid = new String[8][];
