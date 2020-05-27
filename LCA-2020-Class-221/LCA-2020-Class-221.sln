@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookDatabase", "BookDatabas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp", "ToDoListApp\ToDoListApp.csproj", "{EDBAB667-7FB0-4651-94F6-34DF4A9F8F38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoApp2", "ToDoApp2\ToDoApp2.csproj", "{18C039A0-67DB-4573-A9B8-07F7545D3BD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{EDBAB667-7FB0-4651-94F6-34DF4A9F8F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDBAB667-7FB0-4651-94F6-34DF4A9F8F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDBAB667-7FB0-4651-94F6-34DF4A9F8F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C039A0-67DB-4573-A9B8-07F7545D3BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C039A0-67DB-4573-A9B8-07F7545D3BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C039A0-67DB-4573-A9B8-07F7545D3BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C039A0-67DB-4573-A9B8-07F7545D3BD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
